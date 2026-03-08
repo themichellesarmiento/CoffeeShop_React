@@ -1,0 +1,26 @@
+.section_container{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  margin: 1rem 0rem;
+  align-items: center;
+}
+
+.left__content{
+  width: 80%;
+  margin: 0 auto;
+  flex: 0.7;
+
+}
+
+.right__content{
+  flex: 1;
+}
+
+@media screen and (min-width:768px) {
+.section_container{
+  flex-direction: row;
+}
+
+}

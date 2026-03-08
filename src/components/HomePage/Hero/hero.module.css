@@ -1,0 +1,15 @@
+.hero_container {
+  background-image: url('../../../assets/images/hero_image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.hero__subtitle{
+  margin-bottom: 0.5rem;
+}

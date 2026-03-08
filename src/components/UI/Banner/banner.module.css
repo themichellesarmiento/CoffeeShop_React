@@ -1,0 +1,16 @@
+.banner_container{
+  background-color: var(--secondary-color);
+  color: var(--accent-color-one);
+  padding: 0.5rem 1rem;
+}
+
+.heading{
+  color:var(--accent-color-two);
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subHeading{
+  margin-bottom: 1rem;
+}

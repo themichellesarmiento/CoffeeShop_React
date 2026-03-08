@@ -1,0 +1,63 @@
+.footer {
+  background-color: var(--accent-color-two);
+  padding: 2rem;
+}
+
+.footer_contents {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.footer__newsletter__input {
+  background-color: var(--cta-background-color);
+  border: 0px solid var(--cta-background-color);
+  border-radius: 10px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.footer__newsletter__input::placeholder{
+ color: var(--accent-color-one);
+}
+
+.footer__sign__up{
+  text-align: center;
+}
+
+.footer__newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+} 
+
+.footer__newsletter button{
+  padding: 1rem 3rem;
+  background-color: var(--accent-color-one);
+  color: var(--primary-color);
+}
+
+.footer__newsletter button:hover{
+  background-color: var(--cta-background-color);
+  color: var(--accent-color-one);
+}
+
+@media screen and (min-width:768px) {
+  .footer_contents {
+    align-items: flex-start;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer__products,
+  .footer__information,
+  .footer__sign__up {
+    max-width: 300px;
+  }
+}

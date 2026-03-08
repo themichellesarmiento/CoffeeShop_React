@@ -1,0 +1,20 @@
+import {getImageUrl} from '../../../utils/getImageUrl.js';
+import styles from './section.module.css'
+
+const Section =({imageSrc, altText, title , text ,buttonText})=>{
+
+  return(
+    <section className={styles.section_container}>
+      <div className={styles.left__content}>
+        <img src={getImageUrl(imageSrc)} alt={altText} height='auto' width='100%'></img>
+      </div>
+      <div className={styles.right__content}>
+        <h2>{title}</h2>
+        <p>{text}</p>
+        <button>{buttonText}</button>
+      </div>
+    </section>
+  )
+
+}
+export default Section;

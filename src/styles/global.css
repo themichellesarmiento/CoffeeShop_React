@@ -1,0 +1,106 @@
+:root {
+  --primary-color: #444545;
+  --background-color: #F5E9DA;
+  --cta-background-color: #4E342E;
+  --secondary-color: #3E2723;
+  --accent-color-one: #D7BFAE;
+  --accent-color-two: #C68642;
+  --accent-color-three: #e63946;
+
+}
+
+* {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  height: 100vh;
+}
+
+body {
+  min-height: 100%;
+  margin: 0;
+  background-color: var(--background-color);
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  color: var(--primary-color);
+}
+
+main{
+  padding: 2rem;
+}
+
+h1 {
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+h2{
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+}
+
+h3, h4{
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.3rem;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+button {
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  background-color: var(--cta-background-color);
+  color: var(--accent-color-one);
+  border: 0px solid var(--cta-background-color);
+  border-radius: 30px;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin: 1rem 0rem;
+  cursor: pointer;
+
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+input ,label {
+  font-family: 'Outfit', Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+@media screen and (min-width:768px) {
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+   font-size: 1.7rem;
+  }
+
+  h4{
+    font-size: 1.5rem;
+  }
+}

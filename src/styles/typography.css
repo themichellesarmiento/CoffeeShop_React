@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Caudex';
+  src: url('../assets/fonts/Caudex/Caudex.woff2') format('woff2'),
+    url('../assets/fonts/Caudex/Caudex.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Caudex';
+  src: url('../assets/fonts/Caudex/Caudex-Bold.woff2') format('woff2'),
+    url('../assets/fonts/Caudex/Caudex-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit/Outfit-Light.woff2') format('woff2'),
+    url('../assets/fonts/Outfit/Outfit-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('../assets/fonts/Outfit/Outfit-ExtraLight.woff2') format('woff2'),
+    url('../assets/fonts/Outfit/Outfit-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}

@@ -1,0 +1,14 @@
+.wrapper{
+  padding: 2rem;
+}
+
+.contents{
+  padding:0rem 2rem;
+}
+.wrapper h2{
+  color: var(--accent-color-two);
+}
+
+.wrapper h3{
+  color: var(--secondary-color);
+}
