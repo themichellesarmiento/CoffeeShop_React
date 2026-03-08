@@ -1,5 +1,5 @@
 import { menu } from "../../../data/data.js";
-import Item from "../Item";
+import Item from "../Item/index.jsx";
 import Wrapper from "../../UI/Wrapper/index.jsx";
 
 const Breakfast =({setCart})=>{

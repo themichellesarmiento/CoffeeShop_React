@@ -1,8 +1,8 @@
 import Banner from "../../UI/Banner";
-import MonthlyChoice from "../../Menu/MonthlyChoice";
-import ColdDrinks from "../../Menu/ColdDrinks";
-import HotDrinks from "../../Menu/HotDrinks";
-import Breakfast from "../../Menu/Breakfast";
+import MonthlyChoice from "../../MenuComponents/MonthlyChoice";
+import ColdDrinks from "../../MenuComponents/ColdDrinks";
+import HotDrinks from "../../MenuComponents/HotDrinks";
+import Breakfast from "../../MenuComponents/Breakfast";
 
 const Menu = ({setCart}) => {
   return (

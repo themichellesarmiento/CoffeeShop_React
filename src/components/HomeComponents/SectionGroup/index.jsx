@@ -1,7 +1,7 @@
 import {getImageUrl} from '../../../utils/getImageUrl.js';
 import styles from './section.module.css'
 
-const Section =({imageSrc, altText, title , text ,buttonText})=>{
+const SectionGroup =({imageSrc, altText, title , text ,buttonText})=>{
 
   return(
     <section className={styles.section_container}>
@@ -17,4 +17,4 @@ const Section =({imageSrc, altText, title , text ,buttonText})=>{
   )
 
 }
-export default Section;
+export default SectionGroup;
