@@ -1,4 +1,17 @@
-const OrderSummary = ({ drink, size, milk, extras }) => {
+const OrderSummary = ({ drink, size, milk, extras, setCart }) => {
+
+  const addCustomCoffee = () => {
+    const customCoffee = {
+      id: Date.now(),
+      name: `${size} ${drink}`,
+      price: 300,
+      quantity: 1,
+      milk,
+      extras
+    }
+
+    setCart(prev => [...prev, customCoffee])
+  }
 
   return (
     <div>
@@ -17,6 +30,7 @@ const OrderSummary = ({ drink, size, milk, extras }) => {
         </div>
       )}
       <h4>Price: 300 SEK</h4>
+      <button onClick={addCustomCoffee}>Add Custom Coffee</button>
     </div>
   )
 

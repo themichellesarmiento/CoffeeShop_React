@@ -16,7 +16,7 @@ const App = () => {
       <Header updatePage={setPage} cart={cart} />
       {page === 'Home' && <Home />}
       {page === 'Menu' && <Menu setCart={setCart} />}
-      {page === 'Build Your Coffee' && <BuildYourCoffee />}
+      {page === 'Build Your Coffee' && <BuildYourCoffee setCart={setCart}/>}
       {page === 'Cart' && <Cart cart={cart} setCart={setCart} />}
       <Footer />
     </>

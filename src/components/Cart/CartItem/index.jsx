@@ -1,6 +1,6 @@
 import styles from './cartItem.module.css';
 
-const CartItem = ({ id, name, price, quantity, setCart }) => {
+const CartItem = ({ id, name, price, quantity, setCart, milk, extras }) => {
 
   const increaseItem = () => {
     setCart(prev =>
@@ -16,16 +16,27 @@ const CartItem = ({ id, name, price, quantity, setCart }) => {
   };
   return (
     <>
-      <li>
+      <div>
         <p>
           {name} - {quantity} x {price} SEK
         </p>
+        {milk && <p>{milk} Milk</p>}
+        {extras &&
+          <div>
+            <p>Extras:</p>
+            <ul>
+              {extras.map(e => (
+                <li key={e}><p>{e}</p></li>
+              ))}
+            </ul>
+          </div>
+        }
         <div className={styles.button_actions}>
           <button onClick={decreaseItem}>-</button>
           <span>{quantity}</span>
           <button onClick={increaseItem}>+</button>
         </div>
-      </li>
+      </div>
     </>
   )
 }

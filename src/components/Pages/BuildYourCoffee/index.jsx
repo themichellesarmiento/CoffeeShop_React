@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Banner from "../../UI/Banner";
-import DrinkOptions from "../../CoffeeBuilder/DrinkOptions";
-import MilkOptions from "../../CoffeeBuilder/MilkOptions";
-import OrderSummary from "../../CoffeeBuilder/OrderSummary";
-import SizeOptions from "../../CoffeeBuilder/SizeOptions";
+import DrinkOptions from "../../CoffeeBuilderComponents/DrinkOptions";
+import MilkOptions from "../../CoffeeBuilderComponents/MilkOptions";
+import OrderSummary from "../../CoffeeBuilderComponents/OrderSummary";
+import SizeOptions from "../../CoffeeBuilderComponents/SizeOptions";
 import styles from './buildcoffee.module.css';
-import ExtraOptions from "../../CoffeeBuilder/ExtraOptions";
+import ExtraOptions from "../../CoffeeBuilderComponents/ExtraOptions";
 
-const BuildYourCoffee = () => {
+const BuildYourCoffee = ({setCart}) => {
   const [drink, setDrink] = useState("Latte");
   const [size, setSize] = useState("Medium");
   const [milk, setMilk] = useState("Whole");
@@ -24,7 +24,7 @@ const BuildYourCoffee = () => {
           <ExtraOptions extras={extras} setExtras={setExtras} />
         </div>
         <div className={styles.right_content}>
-          <OrderSummary drink={drink} size={size} milk={milk} extras={extras} />
+          <OrderSummary drink={drink} size={size} milk={milk} extras={extras} setCart={setCart}/>
         </div>
       </div>
     </>
