@@ -1,7 +1,13 @@
+import { useState } from "react";
 import CartItem from "./CartItem";
 import styles from './cart.module.css'
 
 const Cart = ({ cart, setCart }) => {
+
+  //SET it to a random number once the component loads
+  const [orderNumber, setOrderNumber] = useState(
+    () => Math.floor(100 + Math.random() * 1000)
+  );
 
   const totalPrice = cart.reduce(
     (totalAmount, item) => totalAmount + item.quantity * item.price,
@@ -15,7 +21,7 @@ const Cart = ({ cart, setCart }) => {
         <>
           <h2 className={styles.message}>Your order is currently being prepared. Please wait at the counter</h2>
           <h2>Your Cart</h2>
-          <h4>Order number : {Math.floor(Math.random() * 10000)}</h4>
+          <h4>Order number : {orderNumber}</h4>
           <div className={styles.contents}>
             {cart.map(item => (
               <CartItem key={item.id} {...item} setCart={setCart} />
