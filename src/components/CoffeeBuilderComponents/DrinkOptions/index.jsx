@@ -1,7 +1,6 @@
+import { availableDrinks } from "../../../data/coffeeOptions.js";
 import OptionGroup from "../../UI/OptionGroup";
 import RadioButtons from "../../UI/RadioButtons";
-
-const availableDrinks = ['Latte', 'Cappuccino', 'Americano']
 
 const DrinkOptions = ({ drink, setDrink }) => {
 

@@ -1,6 +1,7 @@
-import { menu } from "../../../data/data.js";
+import { menu } from "../../../data/menu.js";
 import Item from "../Item";
 import Wrapper from "../../UI/Wrapper/index.jsx";
+
 const ColdDrinks =({setCart})=>{
   const coldDrinks = menu.filter(m=>m.category==='Cold Drinks');
   return(

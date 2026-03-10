@@ -1,7 +1,6 @@
+import { availableSizes } from "../../../data/coffeeOptions.js";
 import OptionGroup from "../../UI/OptionGroup";
 import RadioButtons from "../../UI/RadioButtons";
-
-const availableSizes = ['Small', 'Medium', 'Large']
 
 const SizeOptions = ({size, setSize}) => {
   

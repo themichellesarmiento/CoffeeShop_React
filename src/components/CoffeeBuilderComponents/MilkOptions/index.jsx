@@ -1,7 +1,6 @@
+import { availableMilkOptions } from "../../../data/coffeeOptions.js";
 import OptionGroup from "../../UI/OptionGroup";
 import RadioButtons from "../../UI/RadioButtons";
-
-const availableMilkOptions =['Whole' ,'Oat','Almond']
 
 const MilkOptions =({milk, setMilk})=>{
   

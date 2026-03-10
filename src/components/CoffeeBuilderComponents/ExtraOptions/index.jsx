@@ -1,7 +1,6 @@
+import { availableExtrasOptions } from "../../../data/coffeeOptions.js";
 import OptionGroup from "../../UI/OptionGroup";
 import styles from './extras.module.css'
-
-const availableExtrasOptions = ["Vanilla", "Caramel","Hazelnut" ,"Whipped Cream","Cinnamon","Chocolate Drizzle","Extra Espresso Shot","Cold Foam"];
 
 const ExtraOptions = ({ extras, setExtras }) => {
 
