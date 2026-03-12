@@ -1,10 +1,10 @@
 import { getImageUrl } from '../../../utils/getImageUrl.js';
 import styles from './item.module.css'
 
-const Item = ({ id, image, name, description, price, setCart }) => {
+const Item = ({ id, image, name, description, price, onAddToCart }) => {
 
-  const addToCart = () => {
-    setCart(prev => {
+  const handleAddToCart = () => {
+    onAddToCart(prev => {
       const existingItem = prev.find(p => p.id === id);
 
       if (existingItem) {
@@ -25,7 +25,7 @@ const Item = ({ id, image, name, description, price, setCart }) => {
       </div>
       <div>
         <p>{price} SEK</p>
-        <button onClick={addToCart}>Add To Cart</button>
+        <button className={styles.button} onClick={handleAddToCart}>Add To Cart</button>
       </div>
     </div>
   )

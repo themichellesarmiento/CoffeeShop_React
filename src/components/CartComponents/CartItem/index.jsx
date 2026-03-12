@@ -1,15 +1,15 @@
 import styles from './cartItem.module.css';
 
-const CartItem = ({ id, name, price, quantity, setCart, milk, extras }) => {
+const CartItem = ({ id, name, price, quantity, onAddToCart, milk, extras }) => {
 
-  const increaseItem = () => {
-    setCart(prev =>
+  const handleIncreaseItem = () => {
+    onAddToCart(prev =>
       prev.map(item => item.id === id ? { ...item, quantity: item.quantity + 1 } : item)
     );
   };
 
-  const decreaseItem = () => {
-    setCart(prev =>
+  const handleDecreaseItem = () => {
+    onAddToCart(prev =>
       prev.map(item => item.id === id ? { ...item, quantity: item.quantity - 1 } : item)
         .filter(item => item.quantity > 0) //if quantity becomes 0, remove it
     );
@@ -32,9 +32,9 @@ const CartItem = ({ id, name, price, quantity, setCart, milk, extras }) => {
           </div>
         }
         <div className={styles.button_actions}>
-          <button onClick={decreaseItem}>-</button>
+          <button onClick={handleDecreaseItem}>-</button>
           <span>{quantity}</span>
-          <button onClick={increaseItem}>+</button>
+          <button onClick={handleIncreaseItem}>+</button>
         </div>
       </div>
     </>

@@ -4,15 +4,15 @@ import ColdDrinks from "../../MenuComponents/ColdDrinks";
 import HotDrinks from "../../MenuComponents/HotDrinks";
 import Breakfast from "../../MenuComponents/Breakfast";
 
-const Menu = ({setCart}) => {
+const Menu = ({ addToCart }) => {
   return (
     <>
-      <Banner heading='Menu' subHeading='We handle different products and allergens in our Coffee Shops that may come into contact with each other.' />
+      <Banner heading='Menu' subHeading='We handle different products and allergens in our Coffee Shops.' image='menu_banner.jpg' />
       <main>
-        <MonthlyChoice setCart={setCart}/>
-        <ColdDrinks setCart={setCart}/>
-        <HotDrinks setCart={setCart}/>
-        <Breakfast setCart={setCart}/>
+        <MonthlyChoice onAddToCart={addToCart} />
+        <ColdDrinks onAddToCart={addToCart} />
+        <HotDrinks onAddToCart={addToCart} />
+        <Breakfast onAddToCart={addToCart} />
       </main>
     </>
   )

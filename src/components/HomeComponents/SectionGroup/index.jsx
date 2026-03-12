@@ -1,9 +1,9 @@
-import {getImageUrl} from '../../../utils/getImageUrl.js';
+import { getImageUrl } from '../../../utils/getImageUrl.js';
 import styles from './section.module.css'
 
-const SectionGroup =({imageSrc, altText, title , text ,buttonText})=>{
+const SectionGroup = ({ imageSrc, altText, title, text, buttonText }) => {
 
-  return(
+  return (
     <section className={styles.section_container}>
       <div className={styles.left__content}>
         <img src={getImageUrl(imageSrc)} alt={altText} height='auto' width='100%'></img>

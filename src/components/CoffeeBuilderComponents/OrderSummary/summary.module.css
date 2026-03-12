@@ -1,0 +1,14 @@
+.button_wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.button{
+  margin: 0;
+}
+
+.button:hover {
+  background-color: var(--accent-color-two);
+  border-color: var(--accent-color-two);
+  color: var(--primary-color);
+}

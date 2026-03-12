@@ -21,6 +21,6 @@
 
 .option_card.selected {
   background-color: var(--accent-color-two);;
-  color: var(--background-color);
   border-color: var(--accent-color-two);
+  color: var(--background-color);
 }

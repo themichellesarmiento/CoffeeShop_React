@@ -1,22 +1,23 @@
-.wrapper{
+.wrapper {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
-.wrapper p{
+.wrapper p {
   text-align: center;
 }
+
 .card_container {
-  width: 300px;
-  height: 400px;
-  border-radius: 20px;
-  background-size: cover;
   background-position: center;
-  position: relative;
-  overflow: hidden;
+  background-size: cover;
+  border-radius: 20px;
   cursor: pointer;
+  height: 400px;
   margin: 2rem;
+  overflow: hidden;
+  position: relative;
+  width: 300px;
 }
 
 /*GUIDE SOURCE: https://blog.logrocket.com/css-overlay/ */
@@ -42,15 +43,21 @@
 }
 
 .overlay h3 {
+  color: var(--accent-color-two);
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
   font-weight: normal;
-  color: var(--accent-color-two);
-  margin: 0;
   margin-bottom: 0.5rem;
+  margin: 0;
 }
 
 .overlay p {
-  opacity: 0.7;
-  font-weight: 200;
   color: var(--accent-color-one);
+  font-weight: 200;
+  opacity: 0.7;
+}
+
+.button:hover {
+  background-color: var(--accent-color-two);
+  border-color: var(--accent-color-two);
+  color: var(--primary-color);
 }

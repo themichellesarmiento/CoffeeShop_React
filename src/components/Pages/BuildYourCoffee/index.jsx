@@ -7,7 +7,7 @@ import SizeOptions from "../../CoffeeBuilderComponents/SizeOptions";
 import styles from './buildcoffee.module.css';
 import ExtraOptions from "../../CoffeeBuilderComponents/ExtraOptions";
 
-const BuildYourCoffee = ({setCart}) => {
+const BuildYourCoffee = ({ addToCart }) => {
   const [drink, setDrink] = useState("Latte");
   const [size, setSize] = useState("Medium");
   const [milk, setMilk] = useState("Whole");
@@ -15,16 +15,16 @@ const BuildYourCoffee = ({setCart}) => {
 
   return (
     <>
-      <Banner heading='Build Your Own Coffee' subHeading='Select your ingredients and build your ultimate brew. Your coffee, your configuration.' />
+      <Banner heading='Build Your Own Coffee' subHeading='Select your ingredients and build your ultimate brew. Your coffee, your configuration.' image='customcoffee_banner.jpg' />
       <div className={styles.wrapper}>
         <div className={styles.left_content}>
-          <DrinkOptions drink={drink} setDrink={setDrink} />
-          <MilkOptions milk={milk} setMilk={setMilk} />
-          <SizeOptions size={size} setSize={setSize} />
-          <ExtraOptions extras={extras} setExtras={setExtras} />
+          <DrinkOptions drink={drink} addDrink={setDrink} />
+          <MilkOptions milk={milk} addMilk={setMilk} />
+          <SizeOptions size={size} addSize={setSize} />
+          <ExtraOptions extras={extras} addExtras={setExtras} />
         </div>
         <div className={styles.right_content}>
-          <OrderSummary drink={drink} size={size} milk={milk} extras={extras} setCart={setCart}/>
+          <OrderSummary drink={drink} size={size} milk={milk} extras={extras} onAddToCart={addToCart} />
         </div>
       </div>
     </>

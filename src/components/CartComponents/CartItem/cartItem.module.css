@@ -1,17 +1,17 @@
 .button_actions {
+  align-items: center;
   display: flex;
   gap: 1rem;
-  align-items: center;
 }
 
 .button_actions button {
-  width: 32px;
-  height: 32px;
+  align-items: center;
   border-radius: 50%;
   border: none;
   display: flex;
+  height: 32px;
   justify-content: center;
-  align-items: center;
+  width: 32px;
 }
 
 .button_actions button:hover,

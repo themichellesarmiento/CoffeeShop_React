@@ -4,7 +4,7 @@ import Home from './components/Pages/Home';
 import BuildYourCoffee from "./components/Pages/BuildYourCoffee";
 import Header from "./components/Layout/Header";
 import Footer from './components/Layout/Footer';
-import Cart from "./components/Cart";
+import Cart from "./components/Pages/Cart";
 
 
 const App = () => {
@@ -15,9 +15,9 @@ const App = () => {
     <>
       <Header updatePage={setPage} cart={cart} />
       {page === 'Home' && <Home />}
-      {page === 'Menu' && <Menu setCart={setCart} />}
-      {page === 'Build Your Coffee' && <BuildYourCoffee setCart={setCart}/>}
-      {page === 'Cart' && <Cart cart={cart} setCart={setCart} />}
+      {page === 'Menu' && <Menu addToCart={setCart} />}
+      {page === 'Build Your Coffee' && <BuildYourCoffee addToCart={setCart} />}
+      {page === 'Cart' && <Cart cart={cart} addToCart={setCart} />}
       <Footer />
     </>
   )

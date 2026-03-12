@@ -1,6 +1,7 @@
-const OrderSummary = ({ drink, size, milk, extras, setCart }) => {
+import styles from './summary.module.css'
+const OrderSummary = ({ drink, size, milk, extras, onAddToCart }) => {
 
-  const addCustomCoffee = () => {
+  const handleCustomCoffee = () => {
     const customCoffee = {
       id: Date.now(),
       name: `${size} ${drink}`,
@@ -10,11 +11,11 @@ const OrderSummary = ({ drink, size, milk, extras, setCart }) => {
       extras
     }
 
-    setCart(prev => [...prev, customCoffee])
+    onAddToCart(prev => [...prev, customCoffee])
   }
 
   return (
-    <div>
+    <>
       <h3>Your Coffee</h3>
       <p>{drink}</p>
       <p>{milk} milk</p>
@@ -30,8 +31,10 @@ const OrderSummary = ({ drink, size, milk, extras, setCart }) => {
         </div>
       )}
       <h4>Price: 300 SEK</h4>
-      <button onClick={addCustomCoffee}>Add Custom Coffee</button>
-    </div>
+      <div className={styles.button_wrapper}>
+        <button className={styles.button} onClick={handleCustomCoffee}>Add Custom Coffee</button>
+      </div>
+    </>
   )
 
 }

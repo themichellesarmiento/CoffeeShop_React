@@ -1,18 +1,19 @@
-import { menu } from "../../../data/menu.js";
 import Item from "../Item";
 import Wrapper from "../../UI/Wrapper/index.jsx";
+import { filterMenu } from "../../../utils/filterByCategory.js";
 
-const ColdDrinks =({setCart})=>{
-  const coldDrinks = menu.filter(m=>m.category==='Cold Drinks');
-  return(
+const ColdDrinks = ({ onAddToCart }) => {
+  const coldDrinks = filterMenu('Cold Drinks');
+
+  return (
     <>
-    <h2>{coldDrinks[0]?.category}</h2>
+      <h2>{coldDrinks[0]?.category}</h2>
       <Wrapper>
-      {
-        coldDrinks.map(item => (
-          <Item key={item.id} {...item} setCart={setCart}/>
-        ))
-      }
+        {
+          coldDrinks.map(item => (
+            <Item key={item.id} {...item} onAddToCart={onAddToCart} />
+          ))
+        }
       </Wrapper>
     </>
   )

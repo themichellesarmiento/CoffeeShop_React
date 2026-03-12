@@ -19,12 +19,12 @@ html {
 }
 
 body {
-  min-height: 100%;
-  margin: 0;
   background-color: var(--background-color);
+  color: var(--primary-color);
   font-family: 'Outfit', Arial, Helvetica, sans-serif;
   font-weight: 300;
-  color: var(--primary-color);
+  margin: 0;
+  min-height: 100%;
 }
 
 main{
@@ -32,23 +32,23 @@ main{
 }
 
 h1 {
-  font-family: 'Caudex', Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 1.5rem;
   color: var(--secondary-color);
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 
 h2{
-  font-family: 'Caudex', Arial, Helvetica, sans-serif;
-  font-weight: normal;
-  font-size: 1.5rem;
   color: var(--secondary-color);
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
 }
 
 h3, h4{
   font-family: 'Caudex', Arial, Helvetica, sans-serif;
-  font-weight: normal;
   font-size: 1.3rem;
+  font-weight: normal;
 }
 
 p {
@@ -57,17 +57,17 @@ p {
 }
 
 button {
-  font-family: 'Caudex', Arial, Helvetica, sans-serif;
-  font-weight: bold;
   background-color: var(--cta-background-color);
-  color: var(--accent-color-one);
-  border: 0px solid var(--cta-background-color);
   border-radius: 30px;
-  padding: 0.8rem 1rem;
-  font-size: 1rem;
-  text-transform: uppercase;
-  margin: 1rem 0rem;
+  border: 0px solid var(--cta-background-color);
+  color: var(--accent-color-one);
   cursor: pointer;
+  font-family: 'Caudex', Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 1rem 0rem;
+  padding: 0.8rem 1rem;
+  text-transform: uppercase;
 
 }
 
@@ -77,8 +77,8 @@ li{
 
 a{
   cursor: pointer;
-  text-decoration: none;
   font-size: 1.2rem;
+  text-decoration: none;
 }
 
 input ,label {
