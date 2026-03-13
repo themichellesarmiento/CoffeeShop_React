@@ -13,7 +13,7 @@ const App = () => {
 
   return (
     <>
-      <Header updatePage={setPage} cart={cart} />
+      <Header updatePage={setPage} cart={cart} page={page} />
       {page === 'Home' && <Home />}
       {page === 'Menu' && <Menu addToCart={setCart} />}
       {page === 'Build Your Coffee' && <BuildYourCoffee addToCart={setCart} />}
