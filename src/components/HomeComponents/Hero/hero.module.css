@@ -1,6 +1,7 @@
 .hero_container {
   align-items: start;
   background-image: url('../../../assets/images/hero_image.jpg');
+  background-position: 40% center;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -12,4 +13,10 @@
 
 .hero__subtitle {
   margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width:768px) {
+  .hero_container{
+    background-position: center;
+  }
 }
