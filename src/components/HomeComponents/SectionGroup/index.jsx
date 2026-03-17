@@ -4,8 +4,8 @@ import styles from './section.module.css'
 const SectionGroup = ({ imageSrc, altText, title, text, buttonText, order }) => {
 
   return (
-    <section className={styles.section_container}>
-      <div className={styles.left__content} style={{ order: order }}>
+    <section className={`${styles.section_container} ${order === 'opposite' ? styles.reverse : ''}`}>
+      <div className={styles.left__content}>
         <img src={getImageUrl(imageSrc)} alt={altText} height='auto' width='100%'></img>
       </div>
       <div className={styles.right__content}>

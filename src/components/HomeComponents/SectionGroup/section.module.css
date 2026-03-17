@@ -1,4 +1,4 @@
-.section_container{
+.section_container {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -7,20 +7,24 @@
   padding: 2rem;
 }
 
-.left__content{
+.left__content {
   flex: 0.7;
   margin: 0 auto;
   width: 80%;
 
 }
 
-.right__content{
+.right__content {
   flex: 1;
 }
 
 @media screen and (min-width:768px) {
-.section_container{
-  flex-direction: row;
-}
+  .section_container {
+    flex-direction: row;
+  }
+
+  .reverse {
+    flex-direction: row-reverse;
+  }
 
 }
